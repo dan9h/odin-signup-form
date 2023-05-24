@@ -2,54 +2,90 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Odin Project: Sign-Up Form</title>
   </head>
   <body>
-    <main>
-      <section>
-        <h1>Experience luxury redefined for the modern traveler.</h1>
-        <p>
+    <main class="main">
+      <section class="hero-section">
+        <h1 class="hero__title">
+          Experience luxury redefined for the modern traveler.
+        </h1>
+
+        <p class="hero__subtitle">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut repellat
           eveniet, deleniti praesentium commodi quae?
         </p>
       </section>
-      <section>
-        <h2>Sign up</h2>
-        <form action="" method="post">
-          <div>
-            <label for="fname">First Name</label>
-            <input type="text" name="fname" id="fname" />
+      <section class="form-section">
+        <form class="form" action="" method="post">
+          <h2 class="form__header">Sign up</h2>
+          <div class="form__body">
+            <div class="form__field">
+              <label class="form__label" for="fn">First Name</label>
+              <input
+                class="form__input"
+                type="text"
+                name="fn"
+                id="fn"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="ln">Last Name</label>
+              <input
+                class="form__input"
+                type="text"
+                name="ln"
+                id="ln"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="em">Email Address</label>
+              <input
+                class="form__input"
+                type="email"
+                name="em"
+                id="em"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="pn">Phone Number</label>
+              <input class="form__input" type="tel" name="pn" id="pn" />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="pw">Password</label>
+              <input
+                class="form__input"
+                type="password"
+                name="pw"
+                id="pw"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="cpw">Confirm Password</label>
+              <input
+                class="form__input"
+                type="password"
+                name="cpw"
+                id="cpw"
+                required
+              />
+            </div>
+
+            <div class="form__field">
+              <button class="form__button" type="submit">Create account</button>
+            </div>
           </div>
-
-          <div>
-            <label for="lname">Last Name</label>
-            <input type="text" name="lname" id="lname" />
-          </div>
-
-          <div>
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" />
-          </div>
-
-          <div>
-            <label for="phone">Phone Number</label>
-            <input type="text" name="phone" id="phone" />
-          </div>
-
-          <div>
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password" />
-          </div>
-
-          <div>
-            <label for="confirm-password">Confirm Password</label>
-            <input type="text" name="confirm-password" id="confirm-password" />
-          </div>
-
-          <button type="submit">Create account</button>
-
-          <div>
+          <div class="form__footer">
             <p>Already a member? <a href="#">Sign in</a></p>
           </div>
         </form>
