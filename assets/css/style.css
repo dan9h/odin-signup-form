@@ -35,7 +35,7 @@ body {
 
 .hero-section,
 .form-section {
-  padding: max(1em, 4vw) max(1em, 6vw);
+  padding: max(1.5em, 4vw) max(1em, 6vw);
   flex: 1 1 30em;
 }
 
@@ -69,7 +69,7 @@ body {
 .form__header {
   font-size: clamp(1.5em, 3vw, 2em);
   color: #005000;
-  margin-top: 0;
+  margin-top: 0.25em;
 }
 
 .form__body {
